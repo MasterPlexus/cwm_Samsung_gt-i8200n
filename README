@@ -1,3 +1,50 @@
 Its a try to come to an compiling environment for the Samsung GT-I8200/N/L Smartphone
 
 Initial Version, up to day not worked... Based now on Files for a T110-Tablet due to the same Hardware-Specs 
+
+Here some data which was my sources:
+
+- CWM für T110 (selbe technische basis)
+  http://forum.xda-developers.com/showthread.php?t=2674649
+
+- T110 based souces wich I modify (thanks to gr8nole):
+  https://github.com/gr8nole/android_device_samsung_goyawifi
+
+- Startingbase was CM10.1:
+  repo init -u git://github.com/CyanogenMod/android.git -b cm-10.1
+
+- Beschreibung um an die boot-Logs zu kommen:
+  http://kobablog.wordpress.com/2011/05/26/boot-logs-of-various-android-devices/
+  Normal it is easier after the restart to copy the file /proc/last_kmsg
+  what not really work ist: adb shell cat /proc/kmsg > kmsg.txt
+
+- Init.rc erklärungen:
+  http://droidcore.blogspot.de/2012/12/how-to-edit-initrc-in-android.html
+
+- kernel was extractet from samsung mobile latest firmware for i8200n
+
+- the rest was dokumented in the mk-files with comments
+
+- latest compiled Versions and compile-logs can be found under :
+  https://www.dropbox.com/sh/9aayjzv0lzqk2wm/AADKi7x5zLqjEBueW4uJ7o0Ka
+
+
+
+for later:
+
+- building kernel from source:
+  http://xda-university.com/as-a-developer/getting-started-building-a-kernel-from-source
+
+- linaro-toolchains:
+  https://www.linaro.org/downloads/
+
+- Add Toolchain Linaro under Ubuntu:
+  sudo add-apt-repository ppa:linaro-maintainers/toolchain
+  sudo apt-get install gcc-arm-linux-gnueabi
+
+German informations:
+- gute anleitung Basis:
+  http://www.android-hilfe.de/tipps-anleitungen-zum-os-customizing/443795-tutorial-wie-erstellt-man-ein-rom-aus-den-sourcen-aosp-cm-aokp-aospa-usw.html
+
+- cwm anleitung besser!
+  http://forum.xda-developers.com/showthread.php?t=1866545

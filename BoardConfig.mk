@@ -37,7 +37,7 @@ TARGET_GLOBAL_CFLAGS += -mtune=cortex-a9 -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a9 -mfpu=neon -mfloat-abi=softfp
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/samsung/gti8200n/Kernel/kernel
+TARGET_PREBUILT_KERNEL := device/samsung/gti8200n/kernel
 #TARGET_KERNEL_SOURCE  := kernel/samsung/gti8200n
 #TARGET_KERNEL_CONFIG  := pxa986_goyawifi_rev02_defconfig
 BOARD_KERNEL_CMDLINE  := 
